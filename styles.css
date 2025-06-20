@@ -1,0 +1,61 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  overflow: hidden;
+}
+
+.background {
+  background-image: url('./city-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+
+.content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff66cc; /* pink */
+}
+
+.lead {
+  color: #c5c6ff; /* light purple-blue */
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #8b5cf6; /* purple */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #a855f7;
+}
+
+.btn-warning {
+  font-weight: bold;
+}
+
+/* Added this bc it would'nt let me type in the sign up sheet */
+.dropdown-menu {
+  z-index: 9999 !important;
+}
